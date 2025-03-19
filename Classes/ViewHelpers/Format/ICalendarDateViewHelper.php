@@ -37,7 +37,7 @@ class ICalendarDateViewHelper extends AbstractViewHelper
             $date = $this->renderChildren();
         }
         if ($date instanceof DateTime) {
-            return gmdate('Ymd\THis\Z', $date->getTimestamp());
+            return gmdate('Ymd\THis', $date->getTimestamp());
         }
 
         return '';
